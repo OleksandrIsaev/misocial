@@ -5,7 +5,9 @@
     height: 700px
     padding-top: 50px
     padding-bottom: 50px
-    background: fixed url(https://raw.githubusercontent.com/OleksandrIsaev/misocial/master/src/img/main.png) no-repeat top center/cover, linear-gradient(-60deg, #87d3cd 0%, #6d45e1 100%)
+    background:  url(https://raw.githubusercontent.com/OleksandrIsaev/misocial/master/src/img/main.png) no-repeat top center/cover fixed,
+    linear-gradient(-60deg, #87d3cd 0%, #6d45e1 100%),
+   
 .mainwrapper
     margin: 0 auto
     width: 100%
@@ -24,13 +26,11 @@
 .logo
     a
         text-align: center
-        font-size: 30px
         letter-spacing: 6px
         line-height: 29px
         color: #fff
-        font-weight: 700
-        font-family: "Maven Pro"
         cursor: pointer
+        font: 700 30px "Maven Pro"
         text-decoration: none
 .menu 
     text-decoration: none
@@ -40,12 +40,10 @@
         display: flex
         a
             margin-right: 60px
-            font-size: 16px
             line-height: 19px
             color: #fff
-            font-weight: 500
-            font-family: "Maven Pro"
             text-decoration: none
+            font: 500 16px "Maven Pro"
             &:hover
                 display: inline-block
                 color: #6e45e2
@@ -75,20 +73,19 @@
         border-radius: 25px
         background-color: rgba(110,69,226,0)
         border: 1px solid #fff
-        font-size: 12px
         letter-spacing: 1px
         line-height: 32px
         color: #fff
-        font-weight: 700
-        font-family: "Maven Pro"
         text-align: center
         text-transform: uppercase
         cursor: pointer
+        font: 700 12px "Maven Pro"
         &:hover
             border-color: #6e45e2
             color: #6e45e2
 .social
     display: block
+    padding: 100px
     text-align: center
     p 
         margin-top: 80px
@@ -117,29 +114,25 @@
     h1
         a
             text-align: center
-            font-size: 86px
             letter-spacing: -3px
             line-height: 72px
             color: #fff
-            font-weight: 500
-            font-family: "Maven Pro"
             text-decoration: none
+            font: 500 86px "Maven Pro"
     i
         text-align: center
-        font-size: 16px
         line-height: 28px
         color: #fff
-        font-weight: 400
-        font-family: "Maven Pro"
         font-style: normal
+        font: 400 16px "Maven Pro"
 .arrow
+    display: inline-block
     position: absolute
     width: 64px
     height: 64px
-    bottom: 420px
     left: calc( 50% - 32px ) 
     border-radius: 32px
-    filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+    box-shadow: 0 0 10.5px rgba(204,204,223,0.5)
     background-color: #fff
     cursor: pointer 
     &:hover
@@ -153,23 +146,22 @@
     text-align: center
     margin-bottom: 50px
     p
+        display: inline-block
         margin-top: 100px
         margin-bottom: 20px
         position: relative
-        font-size: 14px
         letter-spacing: 1px
         line-height: 32px
         color: #9fa4af
-        font-weight: 700
-        font-family: "Maven Pro"
         text-transform: uppercase
+        font: 700 14px "Maven Pro"
         &::before
             content: ""
             position: absolute
             width: 25px
             border-top: 1px solid #6e45e2
-            left: 875px
             top: 15px
+            left: 100px
         &::after
             content: ""
             position: absolute
@@ -177,25 +169,21 @@
             border-top: 1px solid #6e45e2
             right: 10px
             top: 15px
-            right: 875px
+            right: 100px
     h2
         margin-bottom: 40px
         margin-top: 0
-        font-size: 60px
         letter-spacing: -2px
         line-height: 72px
         color: #4f4f6f
-        font-weight: 500
-        font-family: "Maven Pro"
         text-align: center
+        font: 500 60px "Maven Pro"
     i
-        font-size: 16px
         line-height: 28px
         color: #9fa4af
-        font-weight: 400
-        font-family: "Maven Pro"
         text-align: center
         font-style: normal
+        font: 400 16px "Maven Pro"
 .personal
     display: flex
     margin-bottom: 120px
@@ -224,42 +212,34 @@
             height: 100px
     i
         display: block
-        font-size: 14px
         letter-spacing: 1px
         line-height: 32px
         color: #9fa4af
-        font-weight: 700
-        font-family: "Maven Pro"
         font-style: normal
         text-transform: uppercase
+        font: 700 14px "Maven Pro"
     b
-        font-size: 60px
         letter-spacing: -2px
         line-height: 72px
         color: #4f4f6f
-        font-weight: 500
-        font-family: "Maven Pro"
         text-align: center
+        font: 500 60px "Maven Pro"
         span
             position: relative
-            font-size: 25px
             letter-spacing: -2px
             line-height: 72px
             color: #4f4f6f
-            font-weight: 500
-            font-family: "Maven Pro"
             text-align: center
+            font: 500 25px "Maven Pro"
         sup
             font-size: 20px
             letter-spacing: 8px
     p
-        font-size: 16px
         line-height: 28px
         color: #9fa4af
-        font-weight: 400
-        font-family: "Maven Pro"
         text-align: center
         letter-spacing: 0px
+        font: 16px 400 "Maven Pro"
     input
         margin-top: 50px
         width: 190px
@@ -268,15 +248,13 @@
         filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
         background-color: #ffffff
         border: 1px solid #d7dbe8
-        font-size: 12px
         letter-spacing: 1px
         line-height: 32px
         color: #c2c9db
-        font-weight: 700
-        font-family: "Maven Pro"
         text-align: center 
         text-transform: uppercase 
         cursor: pointer
+        font: 700 12px "Maven Pro"
         &:hover
             width: 190px
             height: 50px
@@ -290,22 +268,18 @@
     text-align: center
     p
         text-align: center
-        font-size: 14px
         letter-spacing: 1px
         line-height: 32px
         color: #ffffff
-        font-weight: 700
-        font-family: "Maven Pro"
         text-transform: uppercase
+        font: 700 14px "Maven Pro"
         transform: translateY(400%)
     h1
-        font-size: 60px
         letter-spacing: -2px
         line-height: 72px
         color: #ffffff
-        font-weight: 500
-        font-family: "Maven Pro"
         text-align: center
+        font: 500 60px "Maven Pro"
         transform: translateY(160%)
     input
         margin: 10px
@@ -317,27 +291,24 @@
         filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
         background-color: #ffffff
         border: 1px solid #d7dbe8
-        font-size: 12px
         letter-spacing: 1px
         line-height: 32px
         color: #c2c9db
-        font-weight: 700
-        font-family: "Maven Pro"
         text-align: center
         text-transform: uppercase
         cursor: pointer
+        font: 700 12px "Maven Pro"
         &:hover
             border-radius: 25px
             background-color: #6e45e2
-            font-size: 12px
             letter-spacing: 1px
             line-height: 32px
             color: #ffffff
             font-weight: 700
-            font-family: "Maven Pro"
             text-align: center
             text-transform: uppercase
             border: none
+            font: 700 12px "Maven Pro"
 .theend
     display: inline-block
     width: 100%
@@ -351,13 +322,11 @@
         a
             display: flex
             align-items: center
-            font-size: 30px
             letter-spacing: 6px
             line-height: 29px
             color: #37374a
-            font-weight: 700
-            font-family: "Maven Pro"
             text-decoration: none
+            font: 700 30px "Maven Pro"
             img
                 margin-right: 20px
     .botomend
@@ -373,19 +342,14 @@
             list-style-type: none
         a
             margin-right: 18px
-            font-size: 13px
             line-height: 19px
             color: #6a6a77
-            font-weight: 500
-            font-family: "Maven Pro"
             text-decoration: none
+            font: 500 13px "Maven Pro"
         input
-            font-size: 12px
             letter-spacing: 1px
             line-height: 32px
             color: #6a6a77
-            font-weight: 700
-            font-family: "Maven Pro"
             text-align: center
             text-transform: uppercase
             cursor: pointer
@@ -395,6 +359,7 @@
             filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
             background-color: #fff
             border: 1px solid #000
+            font: 700 12px "Maven Pro"
             &:hover
                 width: 150px
                 height: 50px
@@ -406,7 +371,7 @@
     display: inline-block
     padding-right: 50px
     padding-left: 50px
-    width: 81%
+    width: 85%
     p
         display: flex
         justify-content: end
@@ -415,13 +380,10 @@
         font-size: 14px
         font-weight: 500
         font-family: "Maven Pro"
-    a
-        width: 10px
-        height: 10px
-        background: url(img/google.png)  top center/cover
-        background-position: -90px -40px
 .webs
     display: inline-block
+    a
+        margin-right: 10px
     .face
         display: inline-block
         width: 25px
