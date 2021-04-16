@@ -1,31 +1,30 @@
 .mainwrapper
     .mainlogo
         .wrapper 
-            .logo
-                header
-                    nav.navbar.navbar-expand-lg.d-flex.justify-content-between.navbar-dark
-                        .misocial
-                            a(href="#")
-                                img(src="https://raw.githubusercontent.com/OleksandrIsaev/misocial/master/src/img/symbol.png", alt="logo") 
-                                | MISOCIAL 
-                        .menu
-                            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-                                span.navbar-toggler-icon
-                            #navbarNav.menu.collapse.navbar-collapse
-                                ul.navbar-nav 
-                                    li
-                                        a(href="#") Home
-                                    li
-                                        a(href="#") Why MISOCIAL 
-                                    li
-                                        a(href="#") Features  
-                                    li
-                                        a(href="#") Articles  
-                                    li
-                                        a(href="#") Pricing
-                                    .started
-                                        label
-                                            input(type="submit" value="get started ")
+            header
+                nav.row.navbar.navbar-expand-lg.d-flex.justify-content-between.navbar-dark
+                    .misocial.col-lg-4
+                        a(href="#")
+                            img(src="https://raw.githubusercontent.com/OleksandrIsaev/misocial/master/src/img/symbol.png", alt="logo") 
+                            | MISOCIAL 
+                    .menu.col-lg-8
+                        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                            span.navbar-toggler-icon
+                        #navbarNav.menu.collapse.navbar-collapse.justify-content-end
+                            ul.navbar-nav 
+                                li
+                                    a(href="#") Home
+                                li
+                                    a(href="#") Why MISOCIAL 
+                                li
+                                    a(href="#") Features  
+                                li
+                                    a(href="#") Articles  
+                                li
+                                    a(href="#") Pricing
+                            .started
+                                label
+                                    input(type="submit" value="get started ")
         .social 
             p social marketing & analityks 
             h1
