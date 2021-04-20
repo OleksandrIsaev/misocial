@@ -7,11 +7,10 @@
     padding-bottom: 50px
     background:  url(https://raw.githubusercontent.com/OleksandrIsaev/misocial/master/src/img/main.png) no-repeat top center/cover fixed,
     linear-gradient(-60deg, #87d3cd 0%, #6d45e1 100%),
-   
 .mainwrapper
     margin: 0 auto
     width: 100%
-.logo
+.misocial
     display: inline-block
     a  
         display: flex
@@ -40,7 +39,7 @@
         text-align: center
 .wrapper
     margin: 0 auto
-    width: 80%
+    width: 93%
 .misocial
     a
         text-align: center
@@ -51,32 +50,29 @@
         font: 700 30px "Maven Pro"
         text-decoration: none
 .menu 
+    text-align: right
     text-decoration: none
     li
         list-style-type: none
+        text-align: right
     ul
         display: flex
         a
+            position: relative
+            text-align: right
             margin-right: 60px
-            line-height: 19px
             color: #fff
             text-decoration: none
             font: 500 16px "Maven Pro"
-            &:hover
-                display: inline-block
-                color: #6e45e2
-                line-height: 1
-                text-decoration: none
-                cursor: pointer
-                position: relative
+            cursor: pointer
             &::after
                 content: ""
-                display: block
+                position: absolute
                 bottom: -15px
-                background-color: #fff
+                left: 0
                 width: 0
                 height: 3px
-                position: absolute
+                background-color: #fff
                 transition: width .3s ease-in-out
             &:hover::after
                 width: 100%          
@@ -86,6 +82,8 @@
     justify-content: space-between              
 .started
     display: flex
+    text-align: right
+    float: right
     input
         width: 150px
         height: 50px
@@ -101,12 +99,13 @@
         font: 700 12px "Maven Pro"
         &:hover
             border-color: #6e45e2
-            color: #6e45e2
+            color: #fff
+            background-color: #6e45e2
 .social
     display: block
-    padding: 100px
+    padding: 50px
     text-align: center
-    p 
+    i 
         margin-top: 80px
         display: inline-block
         position: relative
@@ -138,9 +137,14 @@
             color: #fff
             text-decoration: none
             font: 500 86px "Maven Pro"
-    i
-        text-align: center
+    p
+        margin: 0 auto
+        width: 387px
+        height: 40px
+        font-size: 16px
         line-height: 28px
+        overflow-y: scroll
+        text-align: center
         color: #fff
         font-style: normal
         font: 400 16px "Maven Pro"           
@@ -164,7 +168,7 @@
     display: block
     text-align: center
     margin-bottom: 50px
-    p
+    i
         display: inline-block
         margin-top: 100px
         margin-bottom: 20px
@@ -197,11 +201,16 @@
         color: #4f4f6f
         text-align: center
         font: 500 60px "Maven Pro"
-    i
+    p
+        margin: 0 auto
+        width: 387px
+        height: 40px
+        font-size: 16px
         line-height: 28px
-        color: #9fa4af
+        overflow-y: scroll
         text-align: center
         font-style: normal
+        color: #9fa4af
         font: 400 16px "Maven Pro"
 .personal
     display: flex
@@ -255,14 +264,15 @@
             font-size: 20px
             letter-spacing: 8px
     p
-        margin: 50px
+        padding: 50px
+        max-height: 220px
+        overflow-y: scroll
         line-height: 28px
         color: #9fa4af
         text-align: center
         letter-spacing: 0px
         font: 16px 400 "Maven Pro"
     input
-        margin-top: 50px
         width: 190px
         height: 50px
         border-radius: 25px
@@ -280,7 +290,12 @@
             width: 190px
             height: 50px
             border-radius: 25px
-            background-color: #6e45e2   
+            background-color: #6e45e2 
+@media screen and (max-width:1110px)
+    .personal
+        display: table
+    .space 
+        display: table  
 .footer
     width: 100%
     height: 520px
@@ -336,6 +351,7 @@
     display: inline-block
     width: 100%
     .finish
+        width: 100%
         padding-left: 50px
         padding-right: 50px
         display: flex
@@ -365,11 +381,14 @@
         ul
             padding: 0
             display: flex
-            justify-content: space-between  
+            justify-content: space-between 
+            text-align: right 
         li
             display: flex
             list-style-type: none
+            text-align: right
         a
+            text-align: right
             margin-right: 18px
             line-height: 19px
             color: #6a6a77
